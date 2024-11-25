@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'index' %}">Главная</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'city' 'Москва' %}">Москва</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'city' 'Казань' %}">Казань</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'city' 'Екатеринбург' %}">Екатеринбург</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'city' 'Сочи' %}">Сочи</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

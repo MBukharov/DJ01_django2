@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="container mt-5">
+    <div class="card shadow" style="max-width: 800px">
+        <div class="card-body">
+            <h2 class="card-title text-center">Московский Кремль</h2>
+            <img src="{% static 'main/img/Moscow.jpg' %}" class="card-img-top img-fluid mb-4" alt="Кремль">
+            <p class="card-text">
+                Московский Кремль — это исторический и архитектурный комплекс в центре Москвы, столицы России.
+                Он является одной из самых известных достопримечательностей страны и символом российской государственной власти.
+                Кремль расположен на левом берегу Москвы-реки и окружен стенами с башнями, общая длина которых составляет около 2,2 км.
+            </p>
+            <p class="card-text">
+                Внутри Кремля находятся многие значимые постройки, такие как соборы, дворцы и музеи.
+                Среди них выделяются Успенский собор, Архангельский собор и Благовещенский собор.
+                Кремль также является официальной резиденцией президента России.
+            </p>
+            <a href="https://www.kreml.ru/" class="btn btn-primary btn-block" target="_blank">Узнать больше</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

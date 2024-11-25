@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="container mt-5">
+    <div class="card shadow" style="max-width: 800px">
+        <div class="card-body">
+            <h2 class="card-title text-center">Казанский Кремль</h2>
+            <img src="{% static 'main/img/Kazan.jpg' %}" class="card-img-top img-fluid mb-4" alt="Кремль">
+            <p class="card-text">
+                 Казанский Кремль — это уникальный историко-архитектурный комплекс, расположенный в городе Казань, столице Татарстана.
+                    Кремль является объектом Всемирного наследия ЮНЕСКО и представляет собой слияние русской и татарской культур.
+            </p>
+            <p class="card-text">
+                На территории Казанского Кремля находятся такие значимые постройки, как Собор Благовещения, мечеть Кул-Шариф, а также Президентский дворец.
+                    Кремль служит не только историческим и культурным центром, но и официальной резиденцией Президента Республики Татарстан.
+            </p>
+            <a href="https://kazan-kremlin.ru/" class="btn btn-primary btn-block" target="_blank">Узнать больше</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
