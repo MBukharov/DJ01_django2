@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="text-center">Новости</h1>
+        {% for new in news %}
+            <div class="card shadow" style="max-width: 800px">
+                <div class="card-body">
+                    <h2 class="card-title text-center">{{ new.title }}</h2>
+                    <p class="card-text">
+                        {{ new.short_description }}
+                    </p>
+                    <p class="card-text">
+                        {{ new.content|safe }}
+                    </p>
+                    <p class="card-text">
+                        <b>Автор: {{ new.author }}</b>
+                    </p>
+                    <p class="card-text">
+                        Дата публикации: {{ new.pub_date }}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
