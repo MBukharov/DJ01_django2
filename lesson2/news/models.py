@@ -5,7 +5,7 @@ class News(models.Model):
     title = models.CharField('Название',max_length=100)
     short_description = models.CharField('Короткое описание',max_length=200)
     content = models.TextField('Новость')
-    author = models.CharField('Автор',max_length=50)
+    source = models.CharField('Источник',max_length=50,default='Пользователь')
     pub_date = models.DateTimeField('Дата публикации')
 
     def __str__(self):
