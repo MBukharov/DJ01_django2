@@ -14,7 +14,10 @@
                         {{ new.content|safe }}
                     </p>
                     <p class="card-text">
-                        <b>Автор: {{ new.source }}</b>
+                        <b>Новость добавил: {{ new.author }}</b>
+                    </p>
+                    <p class="card-text">
+                        <b>Источник: {{ new.source }}</b>
                     </p>
                     <p class="card-text">
                         Дата публикации: {{ new.pub_date }}
